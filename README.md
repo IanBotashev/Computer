@@ -4,14 +4,14 @@ Computer made using Digital (Made by Neeman)
 ## ALU
 Arithmetic Logic Unit, does basic math and logic.  
 
-ID| Op Name  
-0 | Add  
-1 | Subtract  
-2 | Multiply  
-3 | And  
-4 | Or  
-5 | Xor  
-6 | Negate
+**ID - Op Name**  
+0 - Add  
+1 - Subtract  
+2 - Multiply  
+3 - And  
+4 - Or  
+5 - Xor  
+6 - Negate
 
 ## Computer Structure
 ROM - Holds instructions to execute. 10 bit address  
@@ -26,7 +26,7 @@ Instruction Register - Holds the current instruction to execute.
 ### Instruction Byte
 **000000** 0000000000
 
-First 6 bits are reserved for instruction, allowing for 64 instructions
+First 6 bits are reserved for instruction, allowing for 64 instructions  
 10 bits are left over for other information 
 
 ### Microinstructions
