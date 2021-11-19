@@ -23,8 +23,16 @@ Instruction Register - Holds the current instruction to execute.
 
 ## Control Logic
 
-### Instruction Byte
-**000000** 0000000000
+We use a ROM to appropriately get what microinstructions to execute.  
+
+Address are 9 bits:  
+000000 000   
+
+First 3 bits are for the step that we are on.   
+The last 6, are to represent what instruction this is.<?xml version="1.0" encoding="utf-8"?>
+
+### Instruction Byte 
+0000000000 **000000**
 
 First 6 bits are reserved for instruction, allowing for 64 instructions  
 10 bits are left over for other information 
@@ -48,5 +56,15 @@ MARwr - Write to ram from the data bus
 (The MAR always outputs its current data into the RAM, so a read microinstruction is not needed.)  
 
 PCwr - Write to the Program Counter. Basically a jump instruction.
+PCin - Increment current address in the program counter.
 
 ROMre - Output data from address onto data bus
+
+IRwr - Instruction Register write from data bus
+
+SCclr - Step Counter clear signal
+
+### Instructions
+Load A
+Load B
+
