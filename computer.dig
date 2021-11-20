@@ -10,10 +10,6 @@
           <string>runRealTime</string>
           <boolean>true</boolean>
         </entry>
-        <entry>
-          <string>Frequency</string>
-          <int>5</int>
-        </entry>
       </elementAttributes>
       <pos x="560" y="280"/>
     </visualElement>
@@ -445,7 +441,7 @@
         </entry>
         <entry>
           <string>Data</string>
-          <data>4c6</data>
+          <data>443,2,4,7</data>
         </entry>
       </elementAttributes>
       <pos x="940" y="680"/>
@@ -727,7 +723,7 @@
         <entry>
           <string>Data</string>
           <data>e,1,6*0,e,10020,441,5*0,e,10020,881,5*0,e,10401,6*0,e,10020,141
-,5*0,e,10020,281,5*0,e,10101</data>
+,5*0,e,10020,281,5*0,e,10101,6*0,e,20000,6*0,e,10020,141</data>
         </entry>
       </elementAttributes>
       <pos x="1460" y="980"/>

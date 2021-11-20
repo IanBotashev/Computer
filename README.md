@@ -80,31 +80,41 @@ NOP
 No operation, do nothing for 1 clock cycle.
 
 #### Load A
-000001   
-LDA {memory address}
-Loads a memory address from ram into the A register
+000001     
+LDA {memory address}  
+Loads a memory address from ram into the A register  
 
 #### Store/Stash A
-000010
-STA {memory address}
-Store the value of the A register into the RAM in the specified address
+000010  
+STA {memory address}  
+Store the value of the A register into the RAM in the specified address  
 
 #### Load Literal A
-000011
-LLA {value}
-Loads a literal value (Max 10 bits) into the A Register
+000011  
+LLA {value}  
+Loads a literal value (Max 10 bits) into the A Register  
 
 #### Load B
 000100   
-LDB {memory address}
-Loads a memory address from ram into the B register
+LDB {memory address}  
+Loads a memory address from ram into the B register  
 
-#### Store/Stash A
-000101
-STB {memory address}
-Store the value of the B register into the RAM in the specified address
+#### Store/Stash B
+000101  
+STB {memory address}  
+Store the value of the B register into the RAM in the specified address  
 
-#### Load Literal A
-000110
-LLB {value}
-Loads a literal value (Max 10 bits) into the B Register
+#### Load Literal B
+000110  
+LLB {value}  
+Loads a literal value (Max 10 bits) into the B Register  
+
+#### Halt
+000111  
+HLT  
+Stops the clock. Manual pulsing is still possible.  
+
+#### Add
+000111  
+ADD {memory address}  
+Add a number from RAM with Register A, and return the result into the A Register  
