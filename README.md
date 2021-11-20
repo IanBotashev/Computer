@@ -75,46 +75,46 @@ HLT - Halt the clock. Manual operation still possible.
 ### Instructions
 
 #### No Op
-000000  
+000000 (0)  
 NOP  
 No operation, do nothing for 1 clock cycle.
 
 #### Load A
-000001     
+000001 (1)     
 LDA {memory address}  
 Loads a memory address from ram into the A register  
 
 #### Store/Stash A
-000010  
+000010 (2)  
 STA {memory address}  
 Store the value of the A register into the RAM in the specified address  
 
 #### Load Literal A
-000011  
+000011 (3)  
 LLA {value}  
-Loads a literal value (Max 10 bits) into the A Register  
+Loads the next value in memory into Register A
 
 #### Load B
-000100   
+000100 (4)   
 LDB {memory address}  
 Loads a memory address from ram into the B register  
 
 #### Store/Stash B
-000101  
+000101 (5)  
 STB {memory address}  
 Store the value of the B register into the RAM in the specified address  
 
 #### Load Literal B
-000110  
+000110 (6)  
 LLB {value}  
 Loads a literal value (Max 10 bits) into the B Register  
 
 #### Halt
-000111  
+000111 (7)  
 HLT  
 Stops the clock. Manual pulsing is still possible.  
 
 #### Add
-000111  
+001000 (8)  
 ADD {memory address}  
-Add a number from RAM with Register A, and return the result into the A Register  
+Add a number from RAM with contents of Register A, and return the result into the Sum Register
