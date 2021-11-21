@@ -12,7 +12,7 @@
         </entry>
         <entry>
           <string>Frequency</string>
-          <int>10</int>
+          <int>50</int>
         </entry>
       </elementAttributes>
       <pos x="560" y="280"/>
@@ -449,7 +449,7 @@
         </entry>
         <entry>
           <string>Data</string>
-          <data>3,53f,2,8,7</data>
+          <data>10b,1,108,8c</data>
         </entry>
       </elementAttributes>
       <pos x="940" y="680"/>
@@ -732,7 +732,8 @@
           <string>Data</string>
           <data>e,1,6*0,e,40020,441,5*0,e,40020,881,5*0,e,40d,6*0,e,40020,141
 ,5*0,e,40020,281,5*0,e,10d,6*0,e,8ac7230489e80001,6*0,e,40020
-,140,2001</data>
+,140,2000,1401,0,0,0,e,40020,140,6000,1401,0,0,0,e,40020,140,a000
+,1401,0,0,0,e,40020,8d,5*0,e,40011</data>
         </entry>
       </elementAttributes>
       <pos x="1460" y="980"/>

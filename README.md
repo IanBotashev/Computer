@@ -107,7 +107,7 @@ Store the value of the B register into the RAM in the specified address
 #### Load Literal B
 000110 (6)  
 LLB {value}  
-Loads a literal value (Max 10 bits) into the B Register  
+Loads a literal value into the B Register  
 
 #### Halt
 000111 (7)  
@@ -117,4 +117,26 @@ Stops the clock. Manual pulsing is still possible.
 #### Add
 001000 (8)  
 ADD {memory address}  
-Add a number from RAM with contents of Register A, and return the result into the Sum Register
+Add a number from RAM with contents of Register A, and return the result into the A Register
+
+#### Sub
+001001 (9)  
+SUB {memory address}  
+Subtracts a number from RAM with contents of Register A, and return the result into the A Register
+
+#### Mul
+001010 (10)  
+MUL {memory address}  
+Subtracts a number from RAM with contents of Register A, and return the result into the A Register
+
+#### Sli
+001011 (11)  
+SLI {memory address}  
+Store a literal value into ram at a memory address. Value stored in next address over.
+
+#### JMP
+001100 (12)  
+JMP {memory address}  
+Jump onto that memory address in the rom.  
+
+
