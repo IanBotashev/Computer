@@ -72,6 +72,9 @@ SCclr - Step Counter clear signal
 
 HLT - Halt the clock. Manual operation still possible.
 
+SUMre - Read sum register  
+SUMwr - Write to sum register, also writes to ALU flag register.
+
 ### Instructions
 
 #### No Op
@@ -139,4 +142,7 @@ Store a literal value into ram at a memory address. Value stored in next address
 JMP {memory address}  
 Jump onto that memory address in the rom.  
 
-
+#### JEZ
+001101 (13)  
+JEZ {memory address}  
+Jump into that memory address, but only if the last operation in the ALU equaled zero.  
