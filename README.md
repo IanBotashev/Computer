@@ -19,7 +19,9 @@ RAM - RAM, random access memory. 10 bit address
 MAR - Memory Address Register, saves the address at which we want to access the ram. (Only takes in the first 10 bits of the data bus)  
 Register A, B - Generic and General registers for program execution  
 Program Counter - Saves the current address we are in the ROM  
-Instruction Register - Holds the current instruction to execute.
+Instruction Register - Holds the current instruction to execute.  
+Output Register - Contents of this register are outputted into a display.  
+Con. Logic Table - The lookup table for conditional statements such as JEZ
 
 ## Control Logic
 
@@ -74,6 +76,8 @@ HLT - Halt the clock. Manual operation still possible.
 
 SUMre - Read sum register  
 SUMwr - Write to sum register, also writes to ALU flag register.
+
+OUTwr - Write to the output register
 
 ### Instructions
 
@@ -143,11 +147,12 @@ JMP {memory address}
 Jump onto that memory address in the rom.  
 
 #### OUT
-001101 (13)
-OUT
-Output contents of the A Register into the Output Register
+001101 (13)  
+OUT  
+Output contents of the A Register into the Output Register  
 
 #### JEZ
 001110 (14)  
 JEZ {memory address}  
-Jump into that memory address, but only if the last operation in the ALU equaled zero.  
+Jump into that memory address, but only if the last operation in the ALU equaled zero. Jump Equals Zero. (Not Jump if Zero for obvious reasons.)  
+

@@ -62,6 +62,9 @@ def handle_line(line):
     elif parts[0] == 'out':
         return str(bin(13))
 
+    elif parts[0] == 'jez':
+        return f"0b{format(int(parts[1])-1, '010b')}001110"
+
     else:
         raise Exception(f"Unrecognized instruction {parts[0]}")
 
