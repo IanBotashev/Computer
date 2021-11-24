@@ -17,7 +17,8 @@ def main():
 
 
 def handle_line(line):
-    parts = line.lower().split(' ')
+    parts = line.strip().lower().split(' ')
+    print(parts)
 
     if parts[0] == 'nop':
         return "0b0"
@@ -29,7 +30,7 @@ def handle_line(line):
         return f"0b{format(int(parts[1]), '010b')}000010"
 
     elif parts[0] == 'lla':
-        return [f"0b{format(int(parts[1]), '010b')}000011", f"{bin(int(parts[2]))}"]
+        return [f"0b000011", f"{bin(int(parts[1]))}"]
 
     elif parts[0] == 'ldb':
         return f"0b{format(int(parts[1]), '010b')}000100"
@@ -38,7 +39,7 @@ def handle_line(line):
         return f"0b{format(int(parts[1]), '010b')}000101"
 
     elif parts[0] == 'llb':
-        return [f"0b{format(int(parts[1]), '010b')}000110", f"{bin(int(parts[2]))}"]
+        return [f"0b000110", f"{bin(int(parts[1]))}"]
 
     elif parts[0] == 'hlt':
         return str(bin(7))
@@ -57,6 +58,9 @@ def handle_line(line):
 
     elif parts[0] == 'jmp':
         return f"0b{format(int(parts[1])-1, '010b')}001100"
+
+    elif parts[0] == 'out':
+        return str(bin(13))
 
     else:
         raise Exception(f"Unrecognized instruction {parts[0]}")

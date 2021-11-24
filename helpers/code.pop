@@ -1,5 +1,6 @@
-sli 0 65535
-sli 1 1
-lda 0
-add 1
+lla 65535
+out
+sli 0 1
+add 0
+out
 hlt

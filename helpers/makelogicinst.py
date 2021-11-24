@@ -19,6 +19,7 @@ microinstructions = {
     'ALUop': '0000',
     'DBout': '0',
     'HLT': '0',
+    'OUTwr': '0',
 }
 
 

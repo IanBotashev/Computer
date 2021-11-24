@@ -1,3 +1,4 @@
 sli 0 1
 add 0
+out
 jmp 3

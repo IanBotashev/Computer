@@ -142,7 +142,12 @@ Store a literal value into ram at a memory address. Value stored in next address
 JMP {memory address}  
 Jump onto that memory address in the rom.  
 
+#### OUT
+001101 (13)
+OUT
+Output contents of the A Register into the Output Register
+
 #### JEZ
-001101 (13)  
+001110 (14)  
 JEZ {memory address}  
 Jump into that memory address, but only if the last operation in the ALU equaled zero.  
