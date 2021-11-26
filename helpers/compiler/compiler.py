@@ -95,7 +95,7 @@ class Compiler:
         """
         result = token.value
 
-        if token.value < 0:
+        if token.value > 0:
             for offset in self.offset_map:
                 if offset < self.pos:
                     result += self.offset_map[offset]

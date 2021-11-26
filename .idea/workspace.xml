@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="342465bb-77f4-410b-92c4-222b771270fd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/helpers/compiler/code.asm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/helpers/compiler/compiler.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/helpers/compiler/errors.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helpers/compiler/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/compiler/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helpers/compiler/tokenizer.py" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/compiler/tokenizer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hexfiles/program.hex" beforeDir="false" afterPath="$PROJECT_DIR$/hexfiles/program.hex" afterDir="false" />
-    </list>
+    <list default="true" id="342465bb-77f4-410b-92c4-222b771270fd" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -120,7 +113,7 @@
       <option name="presentableId" value="Default" />
       <updated>1637807613873</updated>
       <workItem from="1637807616682" duration="9477000" />
-      <workItem from="1637878119237" duration="13975000" />
+      <workItem from="1637878119237" duration="14315000" />
     </task>
     <servers />
   </component>
@@ -140,7 +133,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Computer$main.coverage" NAME="main Coverage Results" MODIFIED="1637897723602" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/helpers/compiler" />
+    <SUITE FILE_PATH="coverage/Computer$main.coverage" NAME="main Coverage Results" MODIFIED="1637898079419" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/helpers/compiler" />
     <SUITE FILE_PATH="coverage/Computer$compiler.coverage" NAME="compiler Coverage Results" MODIFIED="1637895320140" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/helpers/compiler" />
     <SUITE FILE_PATH="coverage/Computer$tokenizer.coverage" NAME="tokenizer Coverage Results" MODIFIED="1637885500381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/helpers/compiler" />
   </component>
