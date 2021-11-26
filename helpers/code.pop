@@ -1,8 +1,0 @@
-sli 0 5
-lda 0
-sub 0
-jez 7
-jmp 3
-lla 15
-out
-hlt

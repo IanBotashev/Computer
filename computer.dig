@@ -10,10 +10,6 @@
           <string>runRealTime</string>
           <boolean>true</boolean>
         </entry>
-        <entry>
-          <string>Frequency</string>
-          <int>50</int>
-        </entry>
       </elementAttributes>
       <pos x="480" y="280"/>
     </visualElement>
@@ -445,7 +441,7 @@
         </entry>
         <entry>
           <string>Data</string>
-          <data>b,0,1,8,18e,cc,3,c,d,7</data>
+          <data>b,5,4b,3b14,1,9,20e,8c,6,f,41,d,7</data>
         </entry>
       </elementAttributes>
       <pos x="940" y="680"/>
@@ -1227,16 +1223,16 @@
       <elementName>Register</elementName>
       <elementAttributes>
         <entry>
+          <string>rotation</string>
+          <rotation rotation="2"/>
+        </entry>
+        <entry>
           <string>Label</string>
           <string>Output Register</string>
         </entry>
         <entry>
           <string>Bits</string>
           <int>16</int>
-        </entry>
-        <entry>
-          <string>rotation</string>
-          <rotation rotation="2"/>
         </entry>
       </elementAttributes>
       <pos x="920" y="1020"/>
@@ -1353,12 +1349,12 @@
       <elementName>DriverInvSel</elementName>
       <elementAttributes>
         <entry>
-          <string>flipSelPos</string>
-          <boolean>true</boolean>
-        </entry>
-        <entry>
           <string>Bits</string>
           <int>21</int>
+        </entry>
+        <entry>
+          <string>flipSelPos</string>
+          <boolean>true</boolean>
         </entry>
       </elementAttributes>
       <pos x="1600" y="1000"/>
@@ -1381,12 +1377,12 @@
       <elementName>ROM</elementName>
       <elementAttributes>
         <entry>
-          <string>Label</string>
-          <string>Con. Logic Table</string>
-        </entry>
-        <entry>
           <string>AddrBits</string>
           <int>11</int>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>Con. Logic Table</string>
         </entry>
         <entry>
           <string>Bits</string>

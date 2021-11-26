@@ -49,6 +49,8 @@ class Compiler:
         self.results = []
         self.offset_map = {}
 
+        self.generate_offset_map()
+
         while self.pos < len(self.tokens):
             result = self.handle_instruction(self.tokens[self.pos])
             for item in result:
@@ -58,34 +60,47 @@ class Compiler:
         return self.results
 
     def handle_instruction(self, token):
-        if token.value in compile_map:
-            data = compile_map[token.value]
+        data = compile_map[token.value]
 
-            # Get arguments
-            args = []
-            for x in range(1, data["arguments_num"]+1):
-                token = self.tokens[self.pos + x]
-                if token.type == T_PROGADDR:
-                    args.append(bin(self.handle_program_address(token)))
-                else:
-                    args.append(bin(token.value))
+        # Get arguments
+        args = []
+        for x in range(1, data["arguments_num"]+1):
+            token = self.tokens[self.pos + x]
+            if token.type == T_PROGADDR:
+                args.append(bin(self.handle_program_address(token)))
+            else:
+                args.append(bin(token.value))
 
-            # Offset check
-            if data["offset"] > 0:
-                print(f"Added offset of {data['offset']} after address {self.pos}")
-                self.offset_map.update({self.pos: data["offset"]})
+        # Position change
+        self.pos += data["arguments_num"]
 
-            # Position change
-            self.pos += data["arguments_num"]
+        # Compiling
+        result = []
+        for item in data["bin"]:
+            result.append(hex(int(item.format(args), 2)))
+        return result
 
-            # Compiling
-            result = []
-            for item in data["bin"]:
-                result.append(hex(int(item.format(args), 2)))
-            return result
+    def generate_offset_map(self):
+        """
+        Generates the offset map.
+        Also checks if all of the commands exist.
+        :return:
+        """
+        temp_pos = 0
+        while temp_pos < len(self.tokens):
+            token = self.tokens[temp_pos]
+            if token.value in compile_map:
+                data = compile_map[token.value]
 
-        else:
-            raise InvalidInstruction(f"Unrecognized Instruction {token.value}")
+                if data["offset"] > 0:
+                    print(f"Added offset of {data['offset']} after address {temp_pos}")
+                    self.offset_map.update({temp_pos: data["offset"]})
+                temp_pos += data["arguments_num"]
+
+            else:
+                raise InvalidInstruction(f"Unrecognized Instruction {token.value}")
+            temp_pos += 1
+        print(self.offset_map)
 
     def handle_program_address(self, token):
         """
@@ -103,7 +118,6 @@ class Compiler:
             result = 1
 
         return result-1
-
 
 
 if __name__ == "__main__":

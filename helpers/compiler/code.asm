@@ -1,4 +1,0 @@
-SLI 0,1
-ADD 0
-OUT
-JMP &2

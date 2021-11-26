@@ -83,5 +83,5 @@ def get_full_type(pos, line, characters):
 
 if __name__ == "__main__":
     tknzer = Tokenizer()
-    cmd = "SLI 105, #0 STA #1"
+    cmd = "SLI 105, &0 STA &1"
     print(tknzer.tokenize(cmd))
